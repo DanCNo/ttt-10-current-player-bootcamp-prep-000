@@ -13,12 +13,12 @@ end
 #current_player
 
 def current_player(board)
-  turn = turn_count(board) % 2
+  #turn = turn_count(board) % 2
   
   #if turn.even? 
     #return 'X'
   #else return 'O' 
   #end
   
-  turn.even? ? 'X' : 'O'
+  (turn_count(board) % 2).even? ? 'X' : 'O'
 end  
